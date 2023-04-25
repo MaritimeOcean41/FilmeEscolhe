@@ -7,12 +7,13 @@ let film_img = [
     'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.bfMdkMqrWk4BTwykbn_OPgHaIY%26pid%3DApi&f=1&ipt=b69c5c1ae7c999840ac1f2bccdb4d910f09bc95a3736ac286231465f188c32e8&ipo=images',
     'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.2aYqn5tZZV4L-qntEvmXFQHaEH%26pid%3DApi&f=1&ipt=e78130985d8e75f74bca0299302f876c5770cd5c10ab3b3415784db9730b621b&ipo=images'
 ]
-let film_name = ['Bob Esponja', '101 Dalmatas', 'Raya e o Dragão', 'Frozen', 'Mário Bros.', 'Minions', 'O Poderoso Chefinho',];
+let film_name = ['BOB ESPONJA', '101 DALMATAS', 'RAYA E O DRAGÃO', 'FROZEN', 'MÁIO BROS.', 'MINIONS', 'O PODEROSO CHEFINHO'];
 let film_color = ['yellow', 'black', 'blue', '#DBF1FD', 'red', 'yellow', '#0099d8']
 let film_count = [];
+let vote_sou = new Audio("vote_sound.ogg");
 
 for(i = 0; i < 7; i++) {
-    var VOT_EL = `<div class="vot" id="${i}"><img src="${film_img[i]}" id="img_${i}"><div class="cou"><a id="cou_${i}">0</a></div></div>`
+    var VOT_EL = `<div class="vot" id="${i}"><img src="${film_img[i]}" id="img_${i}"><div class="cou"></div></div>`
     $('.container').prepend(VOT_EL);
     film_count.push(0);
 }
@@ -20,7 +21,7 @@ for(i = 0; i < 7; i++) {
 document.querySelectorAll('.vot').forEach(function(item) {
     item.addEventListener('click', function() {
         film_count[item.id] += 1;
-        document.getElementById(`cou_${item.id}`).innerHTML = film_count[item.id];
+        vote_sou.play();
         console.log(item.id);
     })
 })
@@ -43,7 +44,7 @@ const result_graf = new Chart("result_graf", {
         legend: {display: false},
         title: {
             display: true,
-            text: "Resultado Votação Do Filme"
+            text: "RESULTADO DA VOTAÇÃO DO FILME"
         }
     }
 });
