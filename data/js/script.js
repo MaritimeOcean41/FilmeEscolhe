@@ -1,13 +1,13 @@
 let film_img = [
-    'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.PDycBrF3srLlWQGofRGyvgHaFj%26pid%3DApi&f=1&ipt=3ebfab95f0093ab54c675f62a9b5d5702b849f6e2c00b358736673fa2552802c&ipo=images',
-    'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.b_pCQzS8apwwESI3cCSkJwHaEj%26pid%3DApi&f=1&ipt=a003eb03ba4bfb809352ad697e2162169a478f2e63b703512da7d39c75eaecd8&ipo=images',
-    'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.739K6060caiF9VQq9tGB8wHaEK%26pid%3DApi&f=1&ipt=81d4f7158acc44df61b694ca6e2011f4cc2ee3211fa267689a6f4c34cf0dfbe1&ipo=images',
-    'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.4hv8GMgJ7c4VhVEXJjPyUwHaFZ%26pid%3DApi&f=1&ipt=c937b35eba3dfede5fbb0dc10b9e0f2e3f474af704f5cc8ef99e6f1dec41c377&ipo=images',
-    'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.CFCcQ1RPFrot4Yg76Na6VgHaFj%26pid%3DApi&f=1&ipt=1245d541e2a715dc0dc3c2e1b6db0ef00cd280f47b5b53108413c15e2bc71a79&ipo=images',
-    'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.bfMdkMqrWk4BTwykbn_OPgHaIY%26pid%3DApi&f=1&ipt=b69c5c1ae7c999840ac1f2bccdb4d910f09bc95a3736ac286231465f188c32e8&ipo=images',
-    'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.2aYqn5tZZV4L-qntEvmXFQHaEH%26pid%3DApi&f=1&ipt=e78130985d8e75f74bca0299302f876c5770cd5c10ab3b3415784db9730b621b&ipo=images'
+    'data/images/avatar.jpg',
+    'data/images/coraline.jpg',
+    'data/images/doisirmao.jpg',
+    'data/images/hamburguer.jpg',
+    'data/images/mario.jpg',
+    'data/images/pop.jpg',
+    'data/images/raya.jpg',
 ]
-let film_name = ['BOB ESPONJA', '101 DALMATAS', 'RAYA E O DRAGÃO', 'FROZEN', 'MÁIO BROS.', 'MINIONS', 'O PODEROSO CHEFINHO'];
+let film_name = ['AVATAR O CAMINHO DA ÁGUA', 'CORALINE', 'DOIS IRMÃOS', 'TA CHOVENDO HAMBURGUER 2', 'MÁRIO BROS.', 'TUDO POR UM POP STAR', 'RAYA E O ÚLTIMO DRAGÃO'];
 let film_color = ['yellow', 'black', 'blue', '#DBF1FD', 'red', 'yellow', '#0099d8']
 let film_count = [];
 let vote_sou = new Audio("vote_sound.ogg");
